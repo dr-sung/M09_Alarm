@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">M09_Alarm</string>
+    <string name="button_label">Set an Alarm (7 sec)</string>
+</resources>
