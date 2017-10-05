@@ -17,8 +17,11 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".MyAlarmReceiver" android:process=":remote" />
+        <receiver
+            android:name=".MyAlarmReceiver"
+            android:process=":remote" />
 
+        <activity android:name=".NewActivity"></activity>
     </application>
 
 </manifest>

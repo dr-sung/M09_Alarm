@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
                     alarmManager.set(AlarmManager.RTC_WAKEUP,
                             calendar.getTimeInMillis(), pendingIntent);
                 } else {
-                    alarmManager.setExact(AlarmManager.RTC_WAKEUP,
+                    alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,
                             calendar.getTimeInMillis(), pendingIntent);
                 }
 

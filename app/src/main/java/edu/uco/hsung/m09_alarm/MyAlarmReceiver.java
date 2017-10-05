@@ -3,7 +3,6 @@ package edu.uco.hsung.m09_alarm;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.widget.Toast;
 
 /*
      in ManifestFile:
@@ -19,9 +18,8 @@ public class MyAlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context,
-                "MyAlarmReceiver: Alarm went off!",
-                Toast.LENGTH_LONG).show();
+        Intent i = new Intent(context.getApplicationContext(), NewActivity.class);
+        context.getApplicationContext().startActivity(i);
 
     }
 }
